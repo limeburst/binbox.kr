@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}vhosts/{% endblock %}
+
+{% block content %}
+<p>binbox hosts sites for our users.<p>
+<ul>
+{% for site in sites %}
+    <li><a href="{{ site }}">{{ site }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

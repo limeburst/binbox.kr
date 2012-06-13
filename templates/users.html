@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}users/{% endblock %}
+
+{% block content %}
+<p>binbox has a few users.<p>
+<ul>
+{% for user, intro, site in users %}
+    <li><b>{{ user }}</b> {{ intro }}</li>
+    <a href="{{ site }}">{{ site }}</a>
+{% endfor %}
+</ul>
+{% endblock %}

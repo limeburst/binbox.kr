@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}talks/{% endblock %}
+
+{% block content %}
+<p>binbox talks.<p>
+<ol>
+{% for date, giver, title, url in talks %}
+    <li><time>{{ date }}</time> <b>{{ giver }}</b> <a href="{{ url }}">{{ title }}</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}faq/{% endblock %}
+
+{% block content %}
+<p>from the public.<p>
+<ul>
+    <li>what binbox?</li>
+    <p>binbox is a thing run by <a href="http://limeburst.net/">limeburst</a> with a little help from mom. thanks mom! it runs inside a virtual machine, so go nuts.<p>
+    <p>we started as a programming (eek) club at jeil (read: jail) high school in korea. we plan to conquer the world soon.</p>
+    <li>who binbox?</li>
+    <p>anyone.</p>
+    <p>you can get a shell account if you have a good reason. email root.<p>
+    <p>we support students wanting to learn about computers, so if you are, feel free to ask.</p>
+</ul>
+<p>from our own users.<p>
+<ul>
+    <li>how do i log in to binbox?</li>
+    <p>we support ssh. windows users; use <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">putty</a>. and connect to whatever vhost address you prefer.</p>
+    <li>what is there to do on binbox?</li>
+    <p>lots of things.</p>
+    <ul>
+        <li>make a huge, stupid .sig for yourself.</li>
+        <p><code>figlet binbox</code></p>
+        <li>talk to other users.</li>
+        <p><code>irssi -c ocarina.irc.ozinger.org && /join #binbox</code></p>
+        <li>listen to the fortune-telling cow.</li>
+        <p><code>fortune | cowsay</code></p>
+        <li>there is no spoon.</li>
+        <p><code>cmatrix -b</code></p>
+        <li>get someone to teach you vim.</li>
+        <p><code>vimtutor</code></p>
+        <li>learn how to use a terminal multiplexer.</li>
+        <p><code>man screen</code></p>
+    </ul>
+</ul>
+{% endblock %}

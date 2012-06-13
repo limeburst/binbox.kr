@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<p>binbox is an abbreviation of binary box, and that means you, computer.<p>
+<p>pronounced in korean, 'bin' means empty, and 'box' means box.</p>
+<p>binary box the computer is an empty box, without us programmers.</p>
+<h3>binbox now <a href="http://mc.binbox.kr/">minecrafts</a>!</h3>
+<h3>2012 binbox member registration is <a href="{{ url_for('static', filename='boot.pdf') }}">live</a>! grab your form <a href="{{ url_for('static', filename='form.txt') }}">here</a>.</>
+{% endblock %}

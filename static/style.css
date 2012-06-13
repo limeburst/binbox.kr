@@ -1,0 +1,17 @@
+body, pre {
+    font-family: monospace;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+#navigation a:hover, #main a:hover {
+    background-color: blue;
+    color: white;
+}
+
+h3 {
+    font-style: italic;
+}
