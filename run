@@ -1,0 +1,9 @@
+#!/bin/sh
+
+GUNICORN=/usr/bin/gunicorn
+PID=/var/run/binbox.pid
+APP=main:app
+
+if [ -f $PID ]; then rm $PID; fi
+
+exec $GUNICORN -c gunicorn.conf.py --pid=$PID $APP
